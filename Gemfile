@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 #include boostrap
 gem 'bootstrap-sass', '~> 3.2.0'
 
+#include simpleform
+gem 'simple_form'
+
 #include autoprefixer
 gem 'autoprefixer-rails'
 
