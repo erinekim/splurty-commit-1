@@ -29,10 +29,11 @@
 }
 
 .links {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 	padding-top: 26px;
 }
 
-.links a{
+.links a {
 	color: black;
 	font-size: 25px;
 	border-bottom: 1px solid #00688B
@@ -44,4 +45,14 @@ header {
 
 hr {
 	clear: both;
+}
+
+h1 {
+	font-family: 'caviar_dreamsregular', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+h2 {
+	font-family: 'caviar_dreamsitalic', sans-serif;
 }
