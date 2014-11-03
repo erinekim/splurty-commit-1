@@ -20,13 +20,14 @@
  </div>
  <% end %>
 		</div>
-	 <div class="col-xs-4 slogan">
+	 <div class="col-sm-4 hidden-xs slogan">
 			A collection of quotes and advice from some of the most artistic minds.
 	 </div>
 
-		<div class="col-xs-5 links">
+		<div class="col-xs-8 col-xs-offset-1 col-sm-5 links">
 			<!--button trigger modal -->
 			<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+			&nbsp;&nbsp;
 			<%= link_to 'About', about_path %>
 		</div>
 
@@ -43,8 +44,9 @@
         </div>
         <div class="modal-body">
           <%= simple_form_for Quote.new do |f| %>
-			<%= f.input :saying %>
-			<%= f.input :author %>
+			<%= f.input :saying, :label => "What is the quote that you want to add?", :placeholder => "Art is..." %>
+				<br />
+			<%= f.input :author, :label => "Who is the author of the quote?", :placeholder =>"First Name, Last Name" %>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -72,10 +74,10 @@
 
 	<div class="footer">
 		<div class="container">
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-sm-6">
 				<%=link_to "This isn't enough, I want to learn more.", root_path, :class => 'next-quote' %>
 			</div>
-		<div class="col-xs-6 footer-blurb">
+		<div class="col-xs-12 col-sm-6 footer-blurb">
 			Proudly hacked in New York, NY by <a href="#">Erin Kim</a>
 			</div>
 		</div>
