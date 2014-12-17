@@ -8,25 +8,20 @@
 </head>
 <body>
 	<header>
-		<div class="col-xs-3">
+		<div class="header col-xs-10 col-xs-offset-1">
 		<%= link_to root_path, :class => 'logo' do %>
-			<div class="circle">
-  <br />
-  Artists
-  <br />
-  Inspire
-  <br />
-  Artists
- </div>
+		THINKERS INSPIRE DREAMERS
+			
  <% end %>
 		</div>
-	 <div class="col-sm-4 hidden-xs slogan">
-			A collection of quotes and advice from some of the most artistic minds.
+	 <div class="col-xs-10 col-xs-offset-1 slogan">
+		A collection of quotes and advice from some of the greatest, most creative minds. 
 	 </div>
 
-		<div class="col-xs-8 col-xs-offset-1 col-sm-5 links">
-			<!--button trigger modal -->
-			<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+		<div class="col-xs-10 col-xs-offset-1 links">
+		
+		<!--button trigger modal -->
+		<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
 			&nbsp;&nbsp;
 			<%= link_to 'About', about_path %>
 		</div>
@@ -78,7 +73,7 @@
 				<%=link_to "This isn't enough, I want to learn more.", root_path, :class => 'next-quote' %>
 			</div>
 		<div class="col-xs-12 col-sm-6 footer-blurb">
-			Proudly hacked in New York, NY by <a href="#">Erin Kim</a>
+			Proudly hacked in New York, NY by <%= link_to 'Erin Kim', about_path %>
 			</div>
 		</div>
 	</div>
