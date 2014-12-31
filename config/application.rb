@@ -25,7 +25,6 @@ module Splurty
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf)
-
-    
+    config.i18n.enforce_available_locales = false    
   end
 end
