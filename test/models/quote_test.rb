@@ -2,7 +2,7 @@ require 'test_helper'
 
 class QuoteTest < ActiveSupport::TestCase
 	test "unique_tag" do  
-		quote = Quote.create(:author => 'Oscar Wilde', :saying => 'Always forgive your enemies; nothing annoys them more.')
+		quote = FactoryGirl.create(:quote, :author => 'Oscar Wilde')
 		puts quote.inspect
 		expected = 'OW#' + quote.id.to_s
 		actual = quote.unique_tag
